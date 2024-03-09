@@ -1,4 +1,3 @@
-
 import os
 from pathlib import Path
 from django.contrib.messages import constants as messages
@@ -15,7 +14,7 @@ SECRET_KEY = 'django-insecure-8$l%as9%1nmvmn7e1x*uxtt1o)zo!q(o(2d*%i5ka-o!$)h=e3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lab3taversion.azurewebsites.net','127.0.0.1']
+ALLOWED_HOSTS = ['yournameyourid.azurewebsites.net','127.0.0.1']
 
 
 ALLOWED_HOSTS =[os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
